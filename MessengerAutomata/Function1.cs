@@ -21,9 +21,9 @@ namespace MessengerAutomata
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-            var accountSid = System.Environment.GetEnvironmentVariable("MessengerAutomata__AccountSid");
-            var authToken = System.Environment.GetEnvironmentVariable("MessengerAutomata__AuthToken");
-            var MessagingServiceSid = System.Environment.GetEnvironmentVariable("MessengerAutomata__MessagingServiceSid");
+            var accountSid = System.Environment.GetEnvironmentVariable("MessengerAutomataAccountSid");
+            var authToken = System.Environment.GetEnvironmentVariable("MessengerAutomataAuthToken");
+            var MessagingServiceSid = System.Environment.GetEnvironmentVariable("MessengerAutomataMessagingServiceSid");
 
             TwilioClient.Init(accountSid, authToken);
 
